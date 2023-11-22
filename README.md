@@ -1,3 +1,1 @@
-# fall23-sft221-zbb-4 - its on priyangan folder
-
-Project for software testing for group 1
+# fall23-web222-zbb-assignment5 files - for assignment 6
