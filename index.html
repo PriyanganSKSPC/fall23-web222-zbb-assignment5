@@ -1,0 +1,362 @@
+<!-- Your main page should go here -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>My Card Index</title>
+    <link rel="stylesheet" href="https://unpkg.com/mvp.css" />
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      .card-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-auto-rows: minmax(100px, auto);
+        column-gap: 5px;
+        row-gap: 5px;
+      }
+
+      .card {
+        width: 250px;
+        background-color: #ffffff;
+        margin: 10px;
+        padding: 15px;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        text-align: center;
+      }
+
+      .card-title {
+        font-size: 1.2em;
+        margin-bottom: 10px;
+        font-weight: bold;
+      }
+
+      .card img {
+        width: 100%;
+        border-radius: 5px;
+        margin-bottom: 10px;
+      }
+
+      .card-content td:nth-child(odd) {
+        text-align: left;
+      }
+
+      .card-content td:nth-child(even) {
+        text-align: right;
+      }
+
+      .card-content table {
+        width: 100%;
+        display: table;
+      }
+
+      .card-content td {
+        width: 50%;
+      }
+
+      /*Small*/
+      @media (max-width: 400px) {
+        .card-container {
+          grid-template-columns: 1fr;
+        }
+      }
+
+      /*Medium*/
+      @media (min-width: 400px) and (max-width: 8000px) {
+        .card-container {
+          grid-template-columns: 1fr 1fr;
+        }
+      }
+
+      /*Medium*/
+      @media (min-width: 800px) and (max-width: 1200px) {
+        .card-container {
+          grid-template-columns: 1fr 1fr 1fr;
+        }
+      }
+
+      /*Medium*/
+      @media (min-width: 1200px) {
+        .card-container {
+          grid-template-columns: 1fr 1fr 1fr 1fr;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <div class="center">
+        <ul>
+          <li><a href="index.html">Home(index)</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="honesty.html">Honesty</a></li>
+        </ul>
+      </div>
+    </nav>
+    <div class="center-text">
+      <h1><u>Home(index)</u></h1>
+      <h2><u>Fruits List</u></h2>
+    </div>
+    <div class="card-container">
+      <div class="card">
+        <img src="img/apple.jpg" alt="Apple" />
+        <div class="card-title">Apple</div>
+        <div class="card-content">
+          <table>
+            <tr>
+              <td>Price :</td>
+              <td>$2</td>
+            </tr>
+            <tr>
+              <td>On Hand Qty :</td>
+              <td>200</td>
+            </tr>
+            <tr>
+              <td>Produced Date :</td>
+              <td>10/12/2023</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+      <div class="card">
+        <img src="img/banana.jpg" alt="Banana" />
+        <div class="card-title">Banana</div>
+        <div class="card-content">
+          <table>
+            <tr>
+              <td>Price :</td>
+              <td>$3</td>
+            </tr>
+            <tr>
+              <td>On Hand Qty :</td>
+              <td>250</td>
+            </tr>
+            <tr>
+              <td>Produced Date :</td>
+              <td>11/12/2023</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+      <div class="card">
+        <img src="img/blueberry.jpg" alt="Blueberry" />
+        <div class="card-title">Blueberry</div>
+        <div class="card-content">
+          <table>
+            <tr>
+              <td>Price :</td>
+              <td>$1</td>
+            </tr>
+            <tr>
+              <td>On Hand Qty :</td>
+              <td>150</td>
+            </tr>
+            <tr>
+              <td>Produced Date :</td>
+              <td>11/12/2023</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+      <div class="card">
+        <img src="img/chery.jpg" alt="Chery" />
+        <div class="card-title">Chery</div>
+        <div class="card-content">
+          <table>
+            <tr>
+              <td>Price :</td>
+              <td>$5</td>
+            </tr>
+            <tr>
+              <td>On Hand Qty :</td>
+              <td>50</td>
+            </tr>
+            <tr>
+              <td>Produced Date :</td>
+              <td>1/12/2023</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+      <div class="card">
+        <img src="img/grape.jpg" alt="Grape" />
+        <div class="card-title">Grape</div>
+        <div class="card-content">
+          <table>
+            <tr>
+              <td>Price :</td>
+              <td>$.50</td>
+            </tr>
+            <tr>
+              <td>On Hand Qty :</td>
+              <td>500</td>
+            </tr>
+            <tr>
+              <td>Produced Date :</td>
+              <td>5/12/2023</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+      <div class="card">
+        <img src="img/kiwi.jpg" alt="Kiwi" />
+        <div class="card-title">Kiwi</div>
+        <div class="card-content">
+          <table>
+            <tr>
+              <td>Price :</td>
+              <td>$2.6</td>
+            </tr>
+            <tr>
+              <td>On Hand Qty :</td>
+              <td>1000</td>
+            </tr>
+            <tr>
+              <td>Produced Date :</td>
+              <td>11/11/2023</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+      <div class="card">
+        <img src="img/lime.jpg" alt="Lime" />
+        <div class="card-title">Lime</div>
+        <div class="card-content">
+          <table>
+            <tr>
+              <td>Price :</td>
+              <td>$1.9</td>
+            </tr>
+            <tr>
+              <td>On Hand Qty :</td>
+              <td>2000</td>
+            </tr>
+            <tr>
+              <td>Produced Date :</td>
+              <td>11/10/2023</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+      <div class="card">
+        <img src="img/mango.jpg" alt="Mango" />
+        <div class="card-title">Mango</div>
+        <div class="card-content">
+          <table>
+            <tr>
+              <td>Price :</td>
+              <td>$1.6</td>
+            </tr>
+            <tr>
+              <td>On Hand Qty :</td>
+              <td>215</td>
+            </tr>
+            <tr>
+              <td>Produced Date :</td>
+              <td>1/11/2023</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+      <div class="card">
+        <img src="img/orange.jpg" alt="Orange" />
+        <div class="card-title">Orange</div>
+        <div class="card-content">
+          <table>
+            <tr>
+              <td>Price :</td>
+              <td>$2.6</td>
+            </tr>
+            <tr>
+              <td>On Hand Qty :</td>
+              <td>226</td>
+            </tr>
+            <tr>
+              <td>Produced Date :</td>
+              <td>10/11/2023</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+      <div class="card">
+        <img src="img/peach.jpg" alt="Peach" />
+        <div class="card-title">Peach</div>
+        <div class="card-content">
+          <table>
+            <tr>
+              <td>Price :</td>
+              <td>$3.3</td>
+            </tr>
+            <tr>
+              <td>On Hand Qty :</td>
+              <td>350</td>
+            </tr>
+            <tr>
+              <td>Produced Date :</td>
+              <td>14/12/2023</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+      <div class="card">
+        <img src="img/plum.jpg" alt="Plum" />
+        <div class="card-title">Plum</div>
+        <div class="card-content">
+          <table>
+            <tr>
+              <td>Price :</td>
+              <td>$1.2</td>
+            </tr>
+            <tr>
+              <td>On Hand Qty :</td>
+              <td>122</td>
+            </tr>
+            <tr>
+              <td>Produced Date :</td>
+              <td>15/12/2023</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+      <div class="card">
+        <img src="img/strawberry.jpg" alt="Strawberry" />
+        <div class="card-title">Strawberry</div>
+        <div class="card-content">
+          <table>
+            <tr>
+              <td>Price :</td>
+              <td>$2.5</td>
+            </tr>
+            <tr>
+              <td>On Hand Qty :</td>
+              <td>505</td>
+            </tr>
+            <tr>
+              <td>Produced Date :</td>
+              <td>16/12/2023</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+      <div class="card">
+        <img src="img/watermellon.jpg" alt="Watermellon" />
+        <div class="card-title">Watermellon</div>
+        <div class="card-content">
+          <table>
+            <tr>
+              <td>Price :</td>
+              <td>$2.4</td>
+            </tr>
+            <tr>
+              <td>On Hand Qty :</td>
+              <td>2248</td>
+            </tr>
+            <tr>
+              <td>Produced Date :</td>
+              <td>30/10/2023</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

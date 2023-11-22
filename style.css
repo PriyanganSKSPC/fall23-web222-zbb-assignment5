@@ -1,0 +1,17 @@
+.center-text {
+  text-align: center;
+}
+nav {
+  margin: 0;
+  background-color: chartreuse;
+}
+nav .center {
+  margin: auto;
+}
+a {
+  color: black;
+}
+
+body {
+  background-color: #f0ffff;
+}
